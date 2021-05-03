@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite ice cream</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="headerbanner">
+        <div>
+            <h1 id="title">What is your favorite ice cream flavor?</h1>
+        </div>
+        <div>
+            <p><em>Thank you for taking the time to complete this survey</em></p>
+        </div>
+    </header>
+    <main>
+        <div class="formContainer">
+            <div class="formDesc">
+                <p id="description">Please complete the next fields:</p>
+            </div>
+            <form id="survey-form">
+                <div class="formItem">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" class="formInput" placeholder="Enter your name.." required>
+                </div>
+                <div class="formItem">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="formInput" placeholder="Enter your email.." required>
+                </div>
+                <div class="formItem">
+                    <label id="number-label" for="number">Age (optional)</label>
+                    <input type="number" name="age" id="number" class="formInput" min="13" max="90" placeholder="Age">
+                </div>
+                <div class="formItem">
+                    <p class="formDesc">What option describe your current situation?</p>
+                    <select name="situation" id="dropdown" class="formInputSelector" required>
+                        <option disabled selected value>Select your current situation</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full time job</option>
+                        <option value="ptjob">Part time job</option>
+                        <option value="jobless">Jobless</option>
+                        <option value="other">Other</option>
+                        <option value="prefno">Prefer not to say</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="formDesc">Which do you prefer?</p>
+                    <label><input type="radio" name="user-election" value="Cream based" class="formInput" checked>Cream based</label>
+                    <label><input type="radio" name="user-election" value="Water based" class="formInput" >Water based (Sorbet)</label>
+                    <label><input type="radio" name="user-election" value="Water based" class="formInput" >Both</label>
+                </div>
+                <div class="formItem">
+                    <p class="formDesc">What is your favorite flavor?</p>
+                    <select id="favorite" name="favorite" class="formInputSelector" required>
+                      <option disabled="" selected="" value="">Select an option</option>
+                      <option value="Mint Chocolate Chip">Mint Chocolate Chip</option>
+                      <option value="Chocolate">Chocolate</option>
+                      <option value="Oreo Cookies'n Cream">Oreo Cookies'n Cream</option>
+                      <option value="Chocolate Chip">Chocolate Chip</option>
+                      <option value="Pralines 'n Cream">Pralines 'n Cream</option>
+                      <option value="Very Berry Strawberry">Very Berry Strawberry</option>
+                      <option value="Chocolate Chip Cookie Dough">Chocolate Chip Cookie Dough</option>
+                      <option value="Old Fashioned Butter Pecan">Old Fashioned Butter Pecan</option>
+                      <option value="Jamoca">Jamoca</option>
+                      <option value="Reese's Peanut Butter Cup">Reese's Peanut Butter Cup</option>
+                      <option value="Rocky Road">Rocky Road</option>
+                      <option value="Gold Medal Ribbon">Gold Medal Ribbon</option>
+                      <option value="World Class Chocolate">World Class Chocolate</option>
+                      <option value="Cherries Jubilee">Cherries Jubilee</option>
+                      <option value="Chocolate Fudge">Chocolate Fudge</option>
+                      <option value="Daiquiri Ice">Daiquiri Ice</option>
+                      <option value="Rainbow Sherbet">Rainbow Sherbet</option>
+                      <option value="Rainbow Swirl">Rainbow Swirl</option>
+                      <option value="Wild and Reckless">Wild and Reckless</option>
+                      <option value="Mabbols">Mabbols</option>
+                      <option value="Strawberry Cheesecake">Strawberry Cheesecake</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="formItem">
+                      <p class="formDesc">Which store did you visit? (only US residents)</p>
+                      <label><input name="place" value="BASKIN-ROBBINS" type="checkbox" class="formcheckbox">BASKIN-ROBBINS</label>
+                      <label><input name="place" value="COLD STONE CREAMERY" type="checkbox" class="formcheckbox">COLD STONE CREAMERY</label>
+                      <label><input name="place" value="BRAUM’S" type="checkbox" class="formcheckbox">BRAUM’S</label>
+                      <label><input name="place" value="DAIRY QUEEN" type="checkbox" class="formcheckbox">DAIRY QUEEN</label>
+                      <label><input name="place" value="CARVEL" type="checkbox" class="formcheckbox">CARVEL</label>
+                      <label><input name="place" value="HAAGEN-DAZS" type="checkbox" class="formcheckbox">HÄAGEN-DAZS</label>
+                      <label><input name="place" value="DIPPIN’ DOTS" type="checkbox" class="formcheckbox">DIPPIN’ DOTS</label>
+                      <label><input name="place" value="MARBLE SLAB CREAMERY" type="checkbox" class="formcheckbox">MARBLE SLAB CREAMERY</label>
+                      <label><input name="place" value="RITA’S" type="checkbox" class="formcheckbox">RITA’S</label>
+                      <label><input name="place" value="BEN & JERRY’S" type="checkbox" class="formcheckbox">BEN & JERRY’S</label>
+                      <label><input name="place" value="BRUSTER’S" type="checkbox" class="formcheckbox">BRUSTER’S</label>
+                      <label><input name="place" value="FREDDY’S FROZEN CUSTARD AND STEAKBURGERS" type="checkbox" class="formcheckbox">FREDDY’S FROZEN CUSTARD AND STEAKBURGERS</label>
+                      <label><input name="place" value="JENI’S SPLENDID ICE CREAM" type="checkbox" class="formcheckbox">JENI’S SPLENDID ICE CREAM</label>
+                      <label><input name="place" value="OBERWEIS ICE CREAM AND DAIRY STORE" type="checkbox" class="formcheckbox">OBERWEIS ICE CREAM AND DAIRY STORE</label>
+                      <label><input name="place" value="MAGGIE MOO’S" type="checkbox" class="formcheckbox">MAGGIE MOO’S</label>
+                      <label><input name="place" value="ANDY’S FROZEN CUSTARD" type="checkbox" class="formcheckbox">ANDY’S FROZEN CUSTARD</label>
+                      <label><input name="place" value="GRAETER’S" type="checkbox" class="formcheckbox">GRAETER’S</label>
+                      <label><input name="place" value="PACIUGO" type="checkbox" class="formcheckbox">PACIUGO</label>
+                      <label><input name="place" value="AMY’S ICE CREAM" type="checkbox" class="formcheckbox">AMY’S ICE CREAM</label>
+                      <label><input name="place" value="CREAM" type="checkbox" class="formcheckbox">CREAM"</label>
+                      <label><input name="place" value="KILWINS" type="checkbox" class="formcheckbox">KILWINS</label>
+                      <label><input name="place" value="SUB ZERO ICE CREAM" type="checkbox" class="formcheckbox">SUB ZERO ICE CREAMs</label>
+                      <label><input name="place" value="HANDEL’S HOMEMADE ICE CREAM AND YOGURT" type="checkbox" class="formcheckbox">HANDEL’S HOMEMADE ICE CREAM AND YOGURT</label>
+                      <label><input name="place" value="WHIT’S FROZEN CUSTARD" type="checkbox" class="formcheckbox">WHIT’S FROZEN CUSTARD</label>
+                      <label><input name="place" value="BAHAMA BUCK’S" type="checkbox" class="formcheckbox">BAHAMA BUCK’S</label>
+                      <label><input name="place" value="Other" type="checkbox" class="formcheckbox">Other</label>
+                  </div>
+                  <div class="formItem">
+                    <p class="formDesc">Any comments?</p>
+                    <textarea id="comments" class="formtextarea" name="comment" placeholder="Enter your comment here..."></textarea>
+                  </div>
+                  <div class="formItem">
+                    <button type="submit" id="submit" class="formSubmitButton">
+                      Submit
+                    </button>
+                  </div>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
